@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .container {
+      background-color: #a0d0ea;
+      width: 500px;
+      height: 500px;
+      margin: auto;
+      margin-top: 40px;
+      gap: 5px;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+    }
+    div {
+      text-align: center;
+    }
+    #div-screen {
+      position: relative;
+      box-shadow: 3px 3px 4px black;
+      margin: 10px;
+      background-color: white;
+      grid-area: 1/1 / span 1 / span 4;
+    }
+    #div-1 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 2/1 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-2 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 2/2 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-3 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 2/3 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-plus {
+      margin: 10px;
+      background-color: white;
+      grid-area: 2/4 / span 1 / span 1;
+      background-color: #efff93;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-4 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 3/1 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-5 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 3/2 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-6 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 3/3 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-min {
+      margin: 10px;
+      background-color: white;
+      grid-area: 3/4 / span 1 / span 1;
+      background-color: #efff93;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-7 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 4/1 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-8 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 4/2 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-9 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 4/3 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-mul {
+      margin: 10px;
+      background-color: white;
+      grid-area: 4/4 / span 1 / span 1;
+      background-color: #efff93;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-c {
+      margin: 10px;
+      background-color: #fc9faa;
+      grid-area: 5/1 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-0 {
+      margin: 10px;
+      background-color: white;
+      grid-area: 5/2 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-eq {
+      margin: 10px;
+      background-color: white;
+      grid-area: 5/3 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    #div-slash {
+      margin: 10px;
+      background-color: #efff93;
+      grid-area: 5/4 / span 1 / span 1;
+      align-items: center;
+      display: grid;
+      box-shadow: 3px 3px 4px black;
+    }
+    /* #showOP {
+      position: absolute;
+      top: 11.5%;
+      z-index: 3;
+      width: 30px;
+      margin: auto auto auto 0;
+      text-align: left;
+      left: 20%;
+    } */
+  </style>
+  <body style="background-color: #a8bf7e">
+    <div class="container">
+      <!-- <div id="showOP">sad</div> -->
+      <div id="div-screen"></div>
+      <div id="div-1">1</div>
+      <div id="div-2">2</div>
+      <div id="div-3">3</div>
+      <div id="div-plus">+</div>
+      <div id="div-4">4</div>
+      <div id="div-5">5</div>
+      <div id="div-6">6</div>
+      <div id="div-min">-</div>
+      <div id="div-7">7</div>
+      <div id="div-8">8</div>
+      <div id="div-9">9</div>
+      <div id="div-mul">*</div>
+      <div id="div-c">c</div>
+      <div id="div-0">0</div>
+      <div id="div-eq">=</div>
+      <div id="div-slash">/</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
